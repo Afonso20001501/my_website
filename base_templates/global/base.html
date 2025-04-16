@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+         <!-- HEAD-->
+{% include 'my_website/partials/head.html' %}
+
+<title>{% block title %}{% endblock title %}</title>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    {% include 'my_website/partials/nav.html'%}
+
+    {% block content %}
+    
+    {% endblock content %}
+
+    {% include 'my_website/partials/footer.html'%}
+
+{% include 'my_website/partials/body.html' %}
